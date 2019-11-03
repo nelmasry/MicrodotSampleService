@@ -1,15 +1,9 @@
-source https://api.nuget.org/v3/index.json
+source https://www.nuget.org/api/v2/
+framework: auto-detect
 
-// NuGet packages
-nuget NUnit ~> 2.6.3
-nuget FAKE ~> 3.4
-nuget DotNetZip >= 1.9
-
-// Files from GitHub repositories.
-github forki/FsUnit FsUnit.fs
-
-// Gist files.
-gist Thorium/1972349 gistfile1.fs
-
-// HTTP resources.
-http http://www.fssnip.net/1n decrypt.fs
+nuget Gigya.ServiceContract ~> 2.0
+nuget Gigya.Microdot.Interfaces ~> 1.0
+nuget Gigya.Microdot.Orleans.Hosting ~> 1.0
+nuget Gigya.Microdot.Orleans.Ninject.Host ~> 1.0
+nuget Gigya.Microdot.Logging.NLog ~> 1.0
+nuget Gigya.Microdot.Ninject ~> 1.0
